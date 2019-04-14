@@ -49,7 +49,7 @@ header > .menu-icon{
     width:40px;
     text-align: center;
     cursor:pointer;
-    transition: all 2s;
+    transition: all 0.5s;
     box-sizing: unset;
 }
 header > .menu-icon > .menu-bar{

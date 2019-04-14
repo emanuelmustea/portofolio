@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500|Sacramento');
 *{
   box-sizing: border-box;
 }
@@ -6,7 +6,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto","Segoe UI", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -21,4 +21,19 @@ body {
 }
 .flex.column{
   flex-direction: column;
+}
+.grow-full{
+  flex-grow: 1;
+}
+.v-center{
+  margin-top: auto;
+  margin-bottom:auto;
+}
+.center{
+  text-align:center;
+}
+.logo.text{
+  color:#333;
+  font-family: 'Sacramento', cursive;
+  font-size: 56px;
 }
