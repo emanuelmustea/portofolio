@@ -5,6 +5,7 @@ header.toggled{
     right:0px;
     bottom:0px;
     left:0px;
+    z-index:2;
 }
 header > .background{
     position: fixed;
