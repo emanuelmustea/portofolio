@@ -1,0 +1,106 @@
+
+header.toggled{
+    position:fixed;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    z-index:2;
+}
+header > .background{
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    background:white;
+    opacity: 0;
+    align-content: space-between;
+    padding:120px 20px 20px 20px;
+    overflow: hidden;
+    height: 0px;
+    transition:opacity 500ms;
+}
+header.toggled > .background{
+    transition: 0s;
+    animation: FadeIn 500ms ease-in 0s 1 alternate;
+    animation-fill-mode: forwards;
+    height: 100%;
+}
+@keyframes FadeIn{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes FadeOut{
+    0%{
+        opacity:1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+header > .menu-icon{
+    position:relative;
+    padding:10px;
+    margin:20px auto;
+    width:40px;
+    text-align: center;
+    cursor:pointer;
+    transition: all 0.5s;
+    box-sizing: unset;
+}
+header > .menu-icon > .menu-bar{
+    display: block;
+    width:40px;
+    height:2px;
+    margin:11px 0;
+    background:#333;
+    transition:all 500ms;
+}
+header.toggled .menu-bar:first-child{
+    transform-origin: 20px 0;
+    transform:rotate(45deg) translate(10px, 10px);
+
+}
+header.toggled .menu-bar:nth-child(2){
+    opacity:0;
+    transition:all 225ms;
+}
+header.toggled .menu-bar:last-child{
+    transform-origin: 20px 0;
+    transform:rotate(-45deg) translate(7px, -10px);
+
+}
+.menu-item{
+    position: relative;
+    margin:auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    opacity:0;
+    cursor:pointer;
+    animation: FadeOut 225ms ease-in 0s 1 alternate forwards;
+}
+
+header.toggled .menu-item{
+    animation: FadeIn 225ms ease-in 0s 1 alternate forwards;
+}
+header.toggled .menu-item:after{
+    content:"";
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    height:2px;
+    width:0px;
+    margin: 0 auto;
+    background:#333;
+    transition:all 225ms;
+}
+header.toggled .menu-item:hover:after{
+    width:100%;
+}

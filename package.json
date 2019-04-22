@@ -14,12 +14,18 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": ["fortech", "plugin:react/recommended"]
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.12.0",
+    "eslint-config-fortech": "^2.0.2",
+    "eslint-plugin-import": "^2.17.1"
+  }
 }
