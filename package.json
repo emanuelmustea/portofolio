@@ -14,7 +14,10 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": ["fortech", "plugin:react/recommended"]
+    "extends": [
+      "fortech",
+      "plugin:react/recommended"
+    ]
   },
   "browserslist": [
     ">0.2%",

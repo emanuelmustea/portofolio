@@ -1,6 +1,6 @@
 import React from "react";
 import "./Homepage.css";
-import logo from "../assets/lab.svg";
+import logo from "../../assets/lab.svg";
 
 export default function Homepage() {
     return (
