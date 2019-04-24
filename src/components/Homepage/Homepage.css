@@ -1,10 +1,6 @@
 .homepage{
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    min-height: 100vh;
-    padding:70px 0;
+    position: relative;
+    flex:1;
 }
 .bottom-buttons{
     margin:10px;
