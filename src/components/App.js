@@ -1,15 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
 import Header from "./Header/Header";
-import Homepage from "./Homepage/Homepage";
+import Layout from "./Layout";
 
-class App extends Component {
-    render = () => (
-        <div className="App flex column">
-            <Homepage />
-            <Header />
-        </div>
-    )
+function App() {
+    return ( <div className="App flex column">
+        <Layout />
+        <Header />
+    </div> );
 }
 
 export default App;
