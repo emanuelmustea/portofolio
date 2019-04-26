@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Homepage.css";
 import logo from "../../assets/lab.svg";
 
@@ -12,13 +13,17 @@ export default function Homepage() {
                 A young, passionate, involved into the world of JavaScript.
                 </div>
                 <div className="bottom-buttons">
-                    <button className="btn dark">
-                        <span>FIND MORE ABOUT ME</span>
-                    </button>
-                    <button className="btn dark">
-                        <span>
+                    <Link to="/about-me">
+                        <button className="btn dark">
+                            <span>FIND MORE ABOUT ME</span>
+                        </button>
+                    </Link>
+                    <Link to="/portofolio">
+                        <button className="btn dark">
+                            <span>
                         MY CREATIONS</span>
-                    </button>
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>
