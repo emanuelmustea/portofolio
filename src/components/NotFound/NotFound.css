@@ -1,4 +1,36 @@
 .notFound{
     position: relative;
     flex:1 0;
+    -webkit-font-smoothing: antialiased;
+    color:#333;
+}
+.rotated-logo > img{
+    transform: rotate(-100deg) skew(10deg);
+}
+.not-found .big-title{
+    font-size: 150px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+
+}
+.not-found .header{
+    font-size: 28px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    width:250px;
+    margin:auto;
+
+}
+.not-found .menu > a{
+    margin:3px;
+    padding:4px;
+    color:#333;
+    text-decoration: none;
+    font-weight: 300;
+}
+.not-found .menu{
+    margin-top:30px;
+}
+.not-found .menu > a:hover{
+    color:#555;
 }
