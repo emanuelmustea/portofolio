@@ -4,4 +4,4 @@ steps:
 - name: 'gcr.io/cloud-builders/npm'
   args: ['run', 'build']
 - name: 'gcr.io/cloud-builders/gsutil'
-  args: ["-m", "rsync", "-r", "-c", "-d", "./build", "gs://test.countercreator.com"]
+  args: ["-m", "rsync", "-r", "-c", "-d", "./build", "gs://emanuelmustea.com"]
