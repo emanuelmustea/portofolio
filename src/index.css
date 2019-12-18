@@ -1,3 +1,29 @@
+
+:root {
+  --bg-light: white;
+  --bg-dark: #333;
+  --text-color: #333;
+  --border: #666;
+  --light-btn: #efefef;
+  --btn-border: 1px solid #666;
+  --logo-brightness: 1;
+  --link-hover: #555;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-light: #333;
+    --bg-dark: white;
+    --text-color: white;
+    --border: #aaa;
+    --btn-border: 1px solid #eee;
+    --light-btn: #333;
+    --logo-brightness: 100;
+    --link-hover:#aaa;
+
+  }
+}
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500|Sacramento');
 *{
   box-sizing: border-box;
@@ -11,6 +37,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background:var(--bg-light);
 }
 
 .flex{
@@ -33,7 +60,7 @@ body {
   text-align:center;
 }
 .logo.text{
-  color:#333;
+  color:var(--text-color);
   font-family: 'Sacramento', cursive;
   font-size: 56px;
 }
@@ -42,7 +69,7 @@ body {
 }
 .btn{
   position: relative;
-  border:1px solid #666;
+  border:1px solid var(--border);
   outline:0;
   cursor: pointer;
   margin: 5px;
@@ -51,9 +78,11 @@ body {
   font-size: 14px;
   overflow: hidden;
   transition: all 600ms cubic-bezier(.215,.61,.355,1) 0ms;
+  background: var(--light-btn);
+  color: var(--text-color);
 }
 .btn:hover{
-  color:#fff;
+  color:var(--bg-light);
 }
 .btn:before{
   position: absolute;
@@ -64,7 +93,7 @@ body {
     width: 150%;
     height: 110%;
     content: '';
-    background: #333;
+    background:var(--bg-dark);
     transform: skew(45deg,0deg);
     transform-origin: top right;
     left: -190%;
@@ -79,13 +108,13 @@ body {
   z-index:1;
 }
 .btn.light{
-  border:1px solid #eee;
+  border:var(--btn-border);
 }
 .btn.light:hover{
-  color:#333;
+  color:var(--text-color);
 }
 .btn.light:before{
-  background:#efefef;
+  background:var(--light-btn);
 }
 .page-wrapper{
   position:absolute;

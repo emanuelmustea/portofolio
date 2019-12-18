@@ -13,7 +13,7 @@ header > .background{
     right:0;
     left:0;
     bottom:0;
-    background:white;
+    background:var(--bg-light);
     opacity: 0;
     align-content: space-between;
     padding:120px 20px 20px 20px;
@@ -61,7 +61,7 @@ header > .menu-icon > .menu-bar{
     width:40px;
     height:2px;
     margin:11px 0;
-    background:#333;
+    background:var(--bg-dark);
     transition:all 300ms;
 }
 header.toggled .menu-bar:first-child{
@@ -88,7 +88,7 @@ header.toggled .menu-bar:last-child{
     cursor:pointer;
     animation: FadeOut 125ms ease-in 0s 1 alternate forwards;
     text-decoration: none;
-    color:#333;
+    color:var(--text-color);
 }
 
 header.toggled .menu-item{
@@ -103,7 +103,7 @@ header.toggled .menu-item:after{
     height:2px;
     width:0px;
     margin: 0 auto;
-    background:#333;
+    background:var(--bg-dark);
     transition:all 125ms;
 }
 header.toggled .menu-item:hover:after{

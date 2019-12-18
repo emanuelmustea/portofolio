@@ -1,7 +1,11 @@
 .homepage{
     position: relative;
     flex:1;
+    color:var(--text-color)
 }
 .bottom-buttons{
     margin:10px;
+}
+.logo.img{
+    filter:brightness(var(--logo-brightness));
 }
