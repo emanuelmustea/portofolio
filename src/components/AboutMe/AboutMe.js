@@ -9,7 +9,9 @@ export function AboutMe() {
                 <div className="name">
                     <span className="normal">EMANUEL</span>, 21
                 </div>
-                <img className="avatar" alt="" src="https://avatars1.githubusercontent.com/u/16580772" />
+                <div className="avatar">
+                 <img alt="" src="https://avatars1.githubusercontent.com/u/16580772" />
+                </div>
                 </div>
                 <div className="heading">
                 Hello there. If you are on this page probably you're interested to find out more things about me. Well, there isn't much to say. I'm <i>Emanuel Mustea</i>, aged 21, living in a beautiful Romanian city right in the heart of <i>Transylvania</i>, called <i>Cluj-Napoca</i>. But enough of my personal life.

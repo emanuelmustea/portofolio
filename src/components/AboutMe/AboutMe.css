@@ -9,11 +9,12 @@
     padding: 0 20px;
     margin: auto;
 }
-.about-me .avatar{
+.about-me .avatar {
+    margin: 0 0 0 auto;
+}
+.about-me .avatar img{
     width:100px;
     border-radius: 50px;
-    vertical-align: middle;
-    margin: 0 0 0 auto;
 }
 .about-me .page-title{
     display: flex;
