@@ -78,7 +78,7 @@ body {
   font-size: 14px;
   overflow: hidden;
   transition: all 600ms cubic-bezier(.215,.61,.355,1) 0ms;
-  background: var(--light-btn);
+  background: transparent;
   color: var(--text-color);
 }
 .btn:hover{
