@@ -1,4 +1,6 @@
-
+header{
+    overflow: hidden;
+}
 header.toggled{
     position:fixed;
     top:0px;
