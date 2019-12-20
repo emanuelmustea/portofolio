@@ -1,4 +1,4 @@
-
+@import "./styles/icons.css";
 :root {
   --bg-light: white;
   --bg-dark: #333;
@@ -125,4 +125,52 @@ body {
   padding:70px 0;
   display:flex;
   align-items:stretch;
+}
+.page-title{
+  font-weight: 300;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+.normal{
+  font-weight: 400;
+}
+.page-title > .name{
+  margin: auto 0;
+}
+.btn-rounded{
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto","Segoe UI", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  display: inline-block;
+  background: transparent;
+  border: 1.5px solid var(--border);
+  color: var(--border);
+  padding: 12px 30px;
+  border-radius: 50px;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 400;
+  cursor:pointer;
+  transition: 225ms;
+  margin: 4px;
+  margin-left: 0;
+  text-decoration: none;
+  text-align: center;
+}
+.btn-rounded:empty{
+  width:45.7px;
+  height:45.7px;
+  line-height: 1;
+  padding: 12px;
+}
+.btn-rounded:hover{
+  border: 1.2px solid var(--link-hover);
+  background: var(--link-hover);
+  color: var(--light-btn);
+}
+.btn-rounded:before{
+  margin-right: 8px;
+}
+.btn-rounded:empty:before{
+  margin-right:0;
 }
