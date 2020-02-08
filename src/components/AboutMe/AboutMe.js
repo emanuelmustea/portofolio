@@ -7,7 +7,7 @@ export function AboutMe() {
             <div className="v-center">
                 <div className="page-title">
                 <div className="name">
-                    <span className="normal">EMANUEL</span>, 21
+                    <span className="normal">Emanuel</span>, 21
                 </div>
                 <div className="avatar">
                  <img alt="" src="https://avatars1.githubusercontent.com/u/16580772" />

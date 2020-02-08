@@ -1,0 +1,51 @@
+.contact{
+    position: relative;
+    flex:1;
+    color:var(--text-color)
+}
+.contact > .v-center {
+    width: 600px;
+    max-width: 100vw;
+    padding: 0 20px;
+    margin: auto;
+}
+.contact .avatar {
+    margin: 0 0 0 auto;
+}
+.contact .avatar img{
+    width:100px;
+    border-radius: 50px;
+}
+.contact .page-title{
+    display: flex;
+}
+.contact .buttons{
+    margin: 20px 0;
+}
+.input-area{
+    padding: 24px 0;
+}
+.input-area input, .input-area textarea {
+    transition: 225ms;
+    width:100%;
+    display:inline-block;
+    padding: 12px 8px;
+    font-size: 14px;
+    border: 0;
+    border: 1.2px solid;
+    outline: 0;
+    border-color: var(--border);
+    color:var(--text-color);
+    background: transparent;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto","Segoe UI", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    margin-bottom: 12px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.input-area input[type=submit]:hover{
+    cursor:pointer;
+    background: rgba(0,0,0,0.1);
+}
